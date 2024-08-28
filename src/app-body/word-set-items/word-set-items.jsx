@@ -1,10 +1,16 @@
 import './word-set-items.css';
 
-const WordSetItems = () => {
+const WordSetItems = ({word, translation, increase}) => {
+
+    let classNames ='word-set-items list-group-item d-flex justify-content-between';
+    if (increase) {
+        classNames += ' increase';
+    }
+
     return (
-        <li className='word-set-items list-group-item d-flex justify-content-between'>
-            <span className='list-group-item-label'>word 1</span>
-            <span className=''>translation 1</span>
+        <li className={classNames}>
+            <span className='list-group-item-label'>{word}</span>
+            <span className=''>{translation}</span>
             <div classname='d-flex justify-content-center align-items-center'>
                 <button type='button'
                         className='btn-cookie btn-sm'>

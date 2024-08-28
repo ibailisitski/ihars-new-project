@@ -14,3 +14,11 @@
 .list-group-item .btn-trash {
     color: #e5383b;
 }
+
+.list-group-item.increase {
+    color:  blue;
+}
+
+.list-group-item.increase .btn-cookie {
+    color:  blue;
+}
